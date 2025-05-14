@@ -1,0 +1,43 @@
+{
+  "name": "weather-service",
+  "version": "0.0.1",
+  "description": "HTTP Server that uses the Open Weather API for lat/long and returns weather conditions in the area. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "ts-node-dev --respawn src/server.ts",
+    "build": "tsc",
+    "start": "node build/src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dupridog/weather-service.git"
+  },
+  "keywords": [
+    "wither",
+    "the",
+    "weather"
+  ],
+  "author": "Eric Gehrman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dupridog/weather-service/issues"
+  },
+  "homepage": "https://github.com/dupridog/weather-service#readme",
+  "dependencies": {
+    "@types/got": "^9.6.12",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "got": "^14.4.7",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.17",
+    "prettier": "3.5.3",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  }
+}
