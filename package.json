@@ -1,13 +1,14 @@
 {
   "name": "weather-service",
   "version": "0.0.1",
+  "type": "module",
   "description": "HTTP Server that uses the Open Weather API for lat/long and returns weather conditions in the area. ",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "test",
-    "dev": "ts-node-dev --respawn src/server.ts",
-    "build": "tsc",
-    "start": "node build/src/server.js"
+    "test": "vitest",
+    "dev": "tsx watch src/server.ts",
+    "start": "npm run build && node .",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -35,9 +36,11 @@
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.17",
+    "nodemon": "^3.1.10",
     "prettier": "3.5.3",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
   }
 }
