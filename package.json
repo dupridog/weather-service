@@ -2,7 +2,7 @@
   "name": "weather-service",
   "version": "0.0.1",
   "type": "module",
-  "description": "HTTP Server that uses the Open Weather API for lat/long and returns weather conditions in the area. ",
+  "description": "HTTP Server that uses the Open Weather API for lat/long and returns weather conditions in the area.",
   "main": "dist/server.js",
   "scripts": {
     "test": "vitest",
@@ -26,21 +26,24 @@
   },
   "homepage": "https://github.com/dupridog/weather-service#readme",
   "dependencies": {
-    "@types/got": "^9.6.12",
-    "cors": "^2.8.5",
     "express": "^5.1.0",
     "got": "^14.4.7",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.18",
+    "@eslint/js": "^9.26.0",
     "@types/express": "^5.0.1",
+    "@types/got": "^9.6.12",
+    "@types/http-errors": "^2.0.4",
     "@types/node": "^22.15.17",
+    "eslint": "^9.26.0",
+    "http-errors": "^2.0.0",
     "nodemon": "^3.1.10",
     "prettier": "3.5.3",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1",
     "vitest": "^3.1.3"
   }
 }

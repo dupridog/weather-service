@@ -1,10 +1,8 @@
-import express from 'express'
-import { getWeather } from './controllers/weather.js'
+import express from "express";
+import { getWeather } from "./controllers/weather.js";
 
-const router = express.Router()
+const router = express.Router();
 
-router.get('/weather/lat/:latitude/long/:longitude', getWeather)
+router.get("/weather/lat/:latitude/long/:longitude", getWeather);
 
-export default router
-
-
+export default router;
