@@ -1,21 +1,21 @@
-import express, { Request, Response } from "express";
-import router from "./router.js";
+import express, { Request, Response } from 'express'
+import router from './router.js'
 
-const app = express();
-const PORT = process.env.PORT || 8000;
+export const app = express()
+const PORT = process.env.PORT || 8000
 
-app.use("/api", express.json(), router);
+app.use('/api', express.json(), router)
 
-app.get("/", (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   res.status(200).json({
     success: true,
-    message: "API is ready.",
-  });
-});
+    message: 'API is ready.',
+  })
+})
 
 app.listen(PORT, () => {
-  console.log(`API is up and listening on PORT ${PORT}`);
-});
+  console.log(`API is up and listening on PORT ${PORT}`)
+})
 
 // // app.get('/ui/weather/lat/:latitude/long/:longitude', async (req, res) => {
 // //   const latitude = parseFloat(req.params.latitude)
