@@ -1,7 +1,7 @@
 import {
   type WeatherDataResponse,
   type WeatherResponse,
-} from '../src/lib/interfaces.js'
+} from '../src/lib/types.js'
 
 export const mockWeatherResponse: WeatherDataResponse = {
   lat: 46.8901,

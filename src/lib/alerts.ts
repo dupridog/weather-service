@@ -1,4 +1,4 @@
-import { Alert } from './interfaces.js'
+import { type Alert } from './types.js'
 
 export const getAlerts = (alerts: Alert[] | undefined) =>
   alerts

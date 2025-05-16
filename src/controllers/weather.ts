@@ -4,7 +4,7 @@ import { Request, Response } from 'express'
 import { API_KEY, WEATHER_URL } from '../lib/constants.js'
 import { getCurrentConditions, setWeatherTone } from '../lib/weather.js'
 import { getAlerts } from '../lib/alerts.js'
-import { WeatherDataResponse, WeatherResponse } from '../lib/interfaces.js'
+import { WeatherDataResponse, WeatherResponse } from '../lib/types.js'
 
 export const getWeatherData = async (
   lat: string,

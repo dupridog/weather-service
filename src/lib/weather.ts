@@ -1,4 +1,4 @@
-import { Weather } from './interfaces.js'
+import { type Weather } from './types.js'
 
 export const setWeatherTone = (temp: number) => {
   let tone: string = ''
