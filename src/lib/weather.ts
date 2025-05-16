@@ -1,14 +1,4 @@
-import { Weather, WeatherDataResponse } from './interfaces.js'
-import { displayAlerts, getAlerts } from './alerts.js'
-
-export const displayData = (weatherData: WeatherDataResponse) => {
-  const html = `<h3>Weather for ${weatherData.lon} - ${weatherData.lat}</h3><br />
-    <strong>Current Weather:</strong> ${weatherData.current.weather[0].description}<br />
-    <img src=\"https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png\" ><br />
-    <strong>Current Temperature:</strong> ${weatherData.current.temp}<br /><br />
-    <strong>Current Alerts:</strong> ${displayAlerts(weatherData.alerts)}<br />`
-  return html
-}
+import { type Weather } from './types.js'
 
 export const setWeatherTone = (temp: number) => {
   let tone: string = ''

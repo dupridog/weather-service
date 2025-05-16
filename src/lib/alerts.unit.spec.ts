@@ -1,5 +1,5 @@
-import { assert, describe, expect, it } from 'vitest'
-import { getAlerts } from './alerts'
+import { describe, expect, it } from 'vitest'
+import { getAlerts } from './alerts.js'
 
 const alertMock = [
   {
@@ -8,6 +8,7 @@ const alertMock = [
     start: 1747248420,
     end: 1747274400,
     description: 'Its so hot that the chairs melted.',
+    tags: ['scorcher'],
   },
 ]
 

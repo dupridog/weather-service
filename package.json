@@ -6,6 +6,7 @@
   "main": "dist/server.js",
   "scripts": {
     "test": "vitest",
+    "coverage": "vitest run --coverage",
     "dev": "tsx watch src/server.ts",
     "start": "npm run build && node .",
     "build": "tsc"
