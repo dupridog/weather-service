@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getCurrentConditions, setWeatherTone } from './weather'
+import { getCurrentConditions, setWeatherTone } from './weather.js'
 
 const currentWeatherMock = [
   {

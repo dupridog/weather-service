@@ -11,15 +11,16 @@ export const getWeatherData = async (
   lon: string,
 ): Promise<WeatherDataResponse | HttpError> => {
   try {
-    const url = `${WEATHER_URL}/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely&units=imperial&appid=${API_KEY}`
+    const url = `${WEATHER_URL}/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,daily,hourly&units=imperial&appid=${API_KEY}`
     const response = await got.get(url)
     const weatherData: WeatherDataResponse = JSON.parse(response.body)
 
     return weatherData
-  } catch (err: any) {
-    err.statusCode = 404
-    err.message = 'Location cannot be found, please check your coordinates'
-    throw err
+  } catch (err: unknown) {
+    const httpError = err as HttpError
+    httpError.statusCode = 404
+    httpError.message = 'Location cannot be found, please check your coordinates'
+    throw httpError
   }
 }
 
