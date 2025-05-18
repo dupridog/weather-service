@@ -12,11 +12,12 @@ To build and run the service, run `npm run start`. This builds the service, and 
 
 ## Tests
 
-To run tests, run `npm run test`. Tests use the [Vitest](https://vitest.dev/) testing framework.
+To run tests, run `npm run test`. Tests use the [Vitest](https://vitest.dev/) testing framework. <br />
+For coverage, run `npm run coverage`.
 
 # Endpoints
 
-These endpoints allow you to get specific data about the weather. <br /><br />
+This endpoint allows you to get specific data about the weather in your location. <br /><br />
 [`/api/weather/lat/:latitude/long/:longitude`](#get-apiweatherlatlatitudelonglongitude)<br />
 
 ### GET /api/weather/lat/:latitude/long/:longitude
