@@ -1,3 +1,5 @@
+// following types borrowed from https://gist.github.com/TheJoeFin/5d9be4cb2d5ca0136021cb9ce2a9c9e5
+
 export type WeatherDataResponse = {
   lat: number
   lon: number
@@ -50,6 +52,8 @@ export type Alert = {
   description: string
   tags: string[]
 }
+
+// app response types
 
 export type AlertResponse = {
   event: string
